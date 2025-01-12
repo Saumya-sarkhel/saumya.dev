@@ -97,18 +97,19 @@ p {
     margin-bottom: 15px;
 }
 
-.spotify-status {
+.video-status {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     font-size: larger;
 }
 
-.spotify-status img {
+.video-status video {
     width: 100px;
-    width: 100px;
+    height: 100px;
     margin-right: 10px;
     border-radius: 3px 15px 15px 25px;
+    object-fit: cover;
 }
 
 a {
@@ -153,12 +154,12 @@ a {
         cursor: pointer;
     }
 
-    .spotify-status {
+    .video-status {
         flex-direction: column;
         text-align: center;
     }
 
-    .spotify-status img {
+    .video-status video {
         margin-right: 0;
         margin-bottom: 10px;
     }

@@ -36,4 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
             navUl.classList.remove('show');
         }
     });
+
+    const video = document.getElementById('ghosttyVideo');
+    
+    // Force play the video
+    video.play().catch(function(error) {
+        console.log("Video play failed:", error);
+    });
+
+    // Try to play video when it's ready
+    video.addEventListener('canplay', function() {
+        video.play().catch(function(error) {
+            console.log("Video play failed:", error);
+        });
+    });
 }); 
