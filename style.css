@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('fonts\GeistMono-Regular.woff2') format('woff2'),
+         /* url('fonts/GeistMono-Regular.woff') format('woff'), */
+         url('fonts\GeistMono-Regular.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
