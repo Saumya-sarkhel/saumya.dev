@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Geist Mono', monospace;
+    font-size: 90%;
 }
 
 :root {
@@ -47,7 +48,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 25px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 nav{
@@ -286,4 +287,43 @@ a {
     .banner-container {
         height: 200px;
     }
+}
+
+.twitter-button{
+    background-color: rgb(9, 9, 9);
+    color: white;
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: larger;
+    font-style: normal;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 20px;
+}
+
+
+.linkedin-button{
+    background-color: rgb(97, 99, 224);
+    color: white;
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: larger;
+    font-style: normal;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 20px;
+}
+.contact{
+    text-align: center;
+    font-family: 'Geist Mono';
+    justify-content: space-between;
+    padding-top: 50px;
 }
