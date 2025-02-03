@@ -1,9 +1,10 @@
 function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    
+
     const toggleBtn = document.getElementById('theme-toggle-btn');
     toggleBtn.textContent = theme === 'dark' ? '🌙' : '☀️';
+    toggleBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
 }
 
 function toggleTheme() {
@@ -38,11 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const video = document.getElementById('ghosttyVideo');
-    
-    // Force play the video
-    video.play().catch(function(error) {
-        console.log("Video play failed:", error);
-    });
 
     // Try to play video when it's ready
     video.addEventListener('canplay', function() {
@@ -50,4 +46,45 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Video play failed:", error);
         });
     });
-}); 
+
+    // Add form handling
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = this.email.value.trim();
+            const message = this.message.value.trim();
+
+            if (email && message) {
+                // Here you would typically send this data to your backend
+                // For now, we'll just log it and show a success message
+                console.log('Form submitted:', { email, message });
+
+                // Clear the form
+                this.reset();
+
+                // Show success message (you can customize this)
+                alert('Thank you for your message! I will get back to you soon.');
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    }
+});
+
+document.querySelector('.back-to-top-button').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+window.addEventListener('scroll', function() {
+    const button = document.querySelector('.back-to-top-button');
+    if (window.scrollY > 300) {
+        button.style.display = 'flex';
+    } else {
+        button.style.display = 'none';
+    }
+});
