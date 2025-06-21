@@ -1,82 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saumya.dev</title>
-    <link rel="shortcut icon" href="images\top.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saumya.dev</title>
+  <link rel="shortcut icon" href="images\top.png">
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <button class="hamburger">☰</button>
-            <div class="right">
-                <ul>
-                    <li><a href="#" id="home-btn">Home</a></li>
-                    <!-- <li><a href="#" id="about-btn">About</a></li> -->
-                    <li><a href="project.html" id="project-btn">Projects</a></li>
-               </ul>
-            </div>
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn">🌙</button>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <h1> Hi there👋 I'm Saumya</h1>
-        <div class="video-status">
-            <video autoplay loop muted playsinline id="ghosttyVideo">
-                <source src="images\Ghostty vdo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <span>Currently Offline</span>
-        </div>
+  <header>
+    <nav>
+      <button class="hamburger">☰</button>
+      <div class="right">
+        <ul>
+          <li><a href="#" id="home-btn">Home</a></li>
+          <!-- <li><a href="#" id="about-btn">About</a></li> -->
+          <li><a href="project.html" id="project-btn">Projects</a></li>
+        </ul>
+      </div>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn">🌙</button>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <h1> Hi there👋 I'm Saumya</h1>
+    <div class="video-status">
+      <video autoplay loop muted playsinline id="ghosttyVideo">
+        <source src="images\Ghostty vdo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <span>Currently Offline</span>
+    </div>
 
-        <section class="about">
-            <h2>🔭 About Me</h2>
-            <p>- CS Undergrad in @University</p>
-            <p>- Currently I doing some basic web-dev, and learning DSA</p>
-            <p>- Love music, anime and Football, sometimes Chess</p>
-        </section>
+    <section class="about">
+      <h2>🔭 About Me</h2>
+      <p>CS Undergrad at @University</p>
+      <p>Currently I doing some basic web-dev, and learning DSA</p>
+      <p>Love music, anime and Football</p>
+    </section>
 
-        <section class="programming">
-            <h2>🌱 Tech stack</h2>
-            <p>- I am learning <span class="highlight1">C, C++, Python</span> & <span class="highlight2">HTML, CSS, & JS</span></p>
-            <p>- I'm learning more and continuously upskilling.</p>
-        </section>
+    <section class="programming">
+      <h2>🌱 Tech stack</h2>
+      <p> I am learning <span class="highlight1">C, C++, Java </span> & <span class="highlight2">HTML, CSS, &
+          JS</span></p>
+      <!-- <p>Solving problems and building core.</p> -->
+    </section>
 
-        <section class="hire">
-            <h2>📫 Reach Me</h2>
-            <p>- Find me on <a href="https://github.com/Saumya-sarkhel" target="_blank">GitHub</a>, and <a href="https://x.com" target="_blank">Twitter</a>.</p>
-        </section>
 
-        <h3 class="contact">
-            <div class="social-buttons">
-                <a href="https://x.com/" target="_blank">
-                    <button class="twitter-button">𝕏</button>
-                </a>
-<!--
+    <div>
+      <!-- <h3>⚒️ Languages - Tools - Frameworks ⚒️</h3> -->
+       <br>
+       <h3>Language and Tools I use </h3><br>
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=c,cpp,java,html,css,js,bash,vscode,neovim,eclipse,git,github" />
+      </a>
+    </div>
+
+    <section class="hire">
+      <h2>📫 Reach Me</h2>
+      <p>Find me on <a href="https://github.com/Saumya-sarkhel" target="_blank">GitHub</a> and <a
+          href="https://x.com" target="_blank">Twitter</a>.</p>
+    </section>
+
+    <h3 class="contact">
+      <div class="social-buttons">
+        <a href="https://x.com/" target="_blank">
+          <button class="twitter-button">𝕏</button>
+        </a>
+        <!--
                 <a href="https://linkedin.com/" target="_blank">
                     <button class="linkedin-button">in</button>
                 </a> -->
 
-                <a href="https://github.com/Saumya-sarkhel" target="_blank">
-                    <button class="github-button">
-                        <svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-mark-github" aria-hidden="true">
-                            <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-                        </svg>
-                    </button>
-                </a>
-            </div>
-        </h3>
-    </div>
-    <button class="back-to-top-button">
+        <a href="https://github.com/Saumya-sarkhel" target="_blank">
+          <button class="github-button">
+            <svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-mark-github" aria-hidden="true">
+              <path
+                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+              </path>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </h3>
+  </div>
+  <!-- <button class="back-to-top-button">
         <svg class="svgIcon" viewBox="0 0 384 512">
             <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
-        </svg>
-    </button>
-    <script src="script.js"></script>
-  </body>
+        </svg> -->
+  </button>
+  <script src="script.js"></script>
+</body>
+
 </html>
