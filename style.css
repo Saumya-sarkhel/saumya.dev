@@ -5,62 +5,35 @@
     url('fonts\GeistMono-Regular.ttf') format('truetype');
 }
 
-/* Dark theme Gradient  */
+/* DARK THEME (Responsive) */
 .violet-storm-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
   width: 100vw;
   height: 100vh;
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139, 92, 246, 0.25), transparent 70%),
-    #000000;
   pointer-events: none;
-}
-body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.container, header, nav, .container * {
-  position: relative;
-  z-index: 1;
+  background:
+    radial-gradient(ellipse 80vw 60vh at 50% 0%, rgba(139, 92, 246, 0.25), transparent 70%),
+    #000000;
+  transition: background 0.3s;
 }
 
-/* Light theme  */
+/* LIGHT THEME 1 (Responsive) */
 .violet-storm-bg--light {
   position: fixed;
   inset: 0;
   z-index: 0;
   width: 100vw; height: 100vh;
   pointer-events: none;
-  opacity: 0; /* Hide by default */
-  /* Soft violet glow for light backgrounds */
+  opacity: 0;
   background:
-    radial-gradient(
-      ellipse 80% 60% at 50% 0%,
-      rgba(163, 146, 255, 0.18),
-      transparent 70%
-    ),
+    radial-gradient(ellipse 80vw 60vh at 50% 0%, rgba(163, 146, 255, 0.18), transparent 70%),
     #feffee;
   transition: opacity 0.3s;
 }
-/* Show only in light mode */
-[data-theme="light"] .violet-storm-bg--light {
-  opacity: 1;
-}
-[data-theme="light"] .violet-storm-bg {
-  opacity: 0 !important; /* Hide dark glow in light mode */
-}
-[data-theme="dark"] .violet-storm-bg--light {
-  opacity: 0;
-}
-[data-theme="dark"] .violet-storm-bg {
-  opacity: 1;
-}
 
-/* Light theme Gradient */
+/* LIGHT THEME 2 (Responsive Green Glow) */
 .soft-green-glow-bg {
   position: fixed;
   inset: 0;
@@ -68,25 +41,49 @@ body, html {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  /* Soft white + green center glow */
+  opacity: 0;
   background:
-    radial-gradient(circle at center, #8FFFB0 0%, transparent 70%),
+    radial-gradient(circle 45vw at 50vw 35vh, #8FFFB0 0%, transparent 70%),
     #ffffff;
-  opacity: 0; /* Hidden by default (dark mode) */
   transition: opacity 0.3s;
 }
 
-/* Only show in light theme */
-[data-theme="light"] .soft-green-glow-bg { opacity: 1; }
-[data-theme="dark"]  .soft-green-glow-bg { opacity: 0; }
+/* Show/hide backgrounds based on theme state */
+[data-theme="light"] .violet-storm-bg--light { opacity: 1; }
+[data-theme="light"] .violet-storm-bg      { opacity: 0 !important; }
+[data-theme="light"] .soft-green-glow-bg   { opacity: 1; }
+[data-theme="dark"]  .violet-storm-bg--light { opacity: 0; }
+[data-theme="dark"]  .violet-storm-bg      { opacity: 1; }
+[data-theme="dark"]  .soft-green-glow-bg   { opacity: 0; }
 
-/* Make sure your content is above the background */
+/* Responsive tweak for mobile screens */
+@media (max-width: 600px) {
+  .violet-storm-bg,
+  .violet-storm-bg--light {
+    background:
+      radial-gradient(ellipse 92vw 43vh at 50% 0%, rgba(139, 92, 246, 0.20), transparent 67%),
+      #000000;
+  }
+  .soft-green-glow-bg {
+    background:
+      radial-gradient(circle 65vw at 50vw 22vh, #8FFFB0 0%, transparent 70%),
+      #ffffff;
+  }
+}
+
+/* Raise z-index for your content */
 header, .container, nav, .container * {
   position: relative;
   z-index: 1;
 }
 
 
+
+
+html { font-size: 18px; }
+@media (max-width: 600px) {
+  html { font-size: 16px;}
+}
 
 
 
@@ -516,12 +513,4 @@ a {
   opacity: 1;
   bottom: unset;
   transition-duration: 0.3s;
-}
-
-/* Add media query for mobile responsiveness */
-@media (max-width: 768px) {
-  .back-to-top-button {
-    bottom: 20px;
-    right: 20px;
-  }
 }
