@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saumya.dev</title>
-  <link rel="shortcut icon" href="images\top.png">
-  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
-
+  <link rel="shortcut icon" href="imagestop.png">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,31 +15,23 @@
   <div class="background-glow light-theme-glow"></div>
   <header>
     <nav>
-      <div class="menu-overlay"></div>
       <div class="nav-left">
         <button class="hamburger">☰</button>
       </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html" id="home-btn">Home</a></li>
+        <li><a href="project.html" id="project-btn">Projects</a></li>
+      </ul>
     </nav>
-
-    <!-- Move this below nav -->
-    <ul class="mobile-menu">
-       <li><a href="index.html" id="home-btn">Home</a></li>
-      <li><a href="project.html" id="project-btn">Projects</a></li>
-    </ul>
-
+    <div class="theme-toggle">
+      <button id="theme-toggle-btn">🌙</button>
     </div>
-    </div>
-
-      <div class="theme-toggle">
-        <button id="theme-toggle-btn">🌙</button>
-      </div>
-    </nav>
   </header>
   <div class="container">
-    <h1> Hi there👋 I'm Saumya</h1>
+    <h1>Hi there👋 I'm Saumya</h1>
     <div class="video-status">
       <video autoplay loop muted playsinline id="ghosttyVideo">
-        <source src="images\Ghostty vdo.mp4" type="video/mp4">
+        <source src="images/Ghostty vdo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <span>Currently Offline</span>
@@ -49,43 +40,36 @@
     <section class="about">
       <h2>🔭 About Me</h2>
       <p>CS Undergrad at @University</p>
-      <p>Currently I doing some basic web-dev, and learning DSA</p>
-      <p>Love music, anime and Football</p>
+      <p>Currently I'm doing some basic web-dev, and learning DSA</p>
+      <p>Love music, anime, and Football</p>
     </section>
 
     <section class="programming">
       <h2>🌱 Tech stack</h2>
-      <p> I am learning <span class="highlight1">C, C++, Java </span> & <span class="highlight2">HTML, CSS, &
-          JS</span></p>
-      <!-- <p>Solving problems and building core.</p> -->
+      <p>I am learning <span class="highlight1">C, C++, Java</span> & <span class="highlight2">HTML, CSS, & JS</span>
+      </p>
     </section>
 
-    <div><br>
     <div class="skill-icons-section">
-       <h3>Language and Tools I use </h3><br>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=c,cpp,java,html,css,js,bash,vscode,neovim,eclipse,git,github" />
+      <h2>📚Language and Tools I use</h2>
+      <a href=" https://skillicons.dev ">
+        <img src="https://skillicons.dev/icons?i=c,cpp,java,html,css,js,bash,vscode,neovim,eclipse,git,github"
+          alt="Skill Icons">
       </a>
-    </div>
     </div>
 
     <section class="hire">
       <h2>📫 Reach Me</h2>
-      <p>Find me on <a href="https://github.com/Saumya-sarkhel" target="_blank">GitHub</a> and <a href="https://x.com"
-          target="_blank">Twitter</a>.</p>
+      <p>Find me on <a href=" https://github.com/Saumya-sarkhel " target="_blank">GitHub</a> and <a
+          href="https://x.com " target="_blank">Twitter</a>.</p>
     </section>
 
-    <h3 class="contact">
+    <div class="contact">
       <div class="social-buttons">
-        <a href="https://x.com/" target="_blank">
+        <a href="https://x.com " target="_blank">
           <button class="twitter-button">𝕏</button>
         </a>
-        <!--
-                <a href="https://linkedin.com/" target="_blank">
-                    <button class="linkedin-button">in</button>
-                </a> -->
-
-        <a href="https://github.com/Saumya-sarkhel" target="_blank">
+        <a href="https://github.com/Saumya-sarkhel " target="_blank">
           <button class="github-button">
             <svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-mark-github" aria-hidden="true">
               <path
@@ -95,9 +79,9 @@
           </button>
         </a>
       </div>
-    </h3>
+    </div>
   </div>
-  <!-- Removed the extra, unmatched </button> tag here -->
+  <button class="back-to-top-button">↑</button>
   <script src="script.js"></script>
 </body>
 
