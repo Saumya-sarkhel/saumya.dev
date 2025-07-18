@@ -12,19 +12,25 @@
 </head>
 
 <body>
-  <div class="violet-storm-bg"></div>
-  <div class="violet-storm-bg--light"></div>
-  <div class="soft-green-glow-bg"></div>
+  <div class="background-glow dark-theme-glow"></div>
+  <div class="background-glow light-theme-glow"></div>
   <header>
     <nav>
-      <button class="hamburger">☰</button>
-      <div class="right">
-        <ul>
-          <li><a href="#" id="home-btn">Home</a></li>
-          <!-- <li><a href="#" id="about-btn">About</a></li> -->
-          <li><a href="project.html" id="project-btn">Projects</a></li>
-        </ul>
+      <div class="menu-overlay"></div>
+      <div class="nav-left">
+        <button class="hamburger">☰</button>
       </div>
+    </nav>
+
+    <!-- Move this below nav -->
+    <ul class="mobile-menu">
+       <li><a href="index.html" id="home-btn">Home</a></li>
+      <li><a href="project.html" id="project-btn">Projects</a></li>
+    </ul>
+
+    </div>
+    </div>
+
       <div class="theme-toggle">
         <button id="theme-toggle-btn">🌙</button>
       </div>
@@ -54,20 +60,19 @@
       <!-- <p>Solving problems and building core.</p> -->
     </section>
 
-
-    <div>
-      <!-- <h3>⚒️ Languages - Tools - Frameworks ⚒️</h3> -->
-       <br>
+    <div><br>
+    <div class="skill-icons-section">
        <h3>Language and Tools I use </h3><br>
       <a href="https://skillicons.dev">
         <img src="https://skillicons.dev/icons?i=c,cpp,java,html,css,js,bash,vscode,neovim,eclipse,git,github" />
       </a>
     </div>
+    </div>
 
     <section class="hire">
       <h2>📫 Reach Me</h2>
-      <p>Find me on <a href="https://github.com/Saumya-sarkhel" target="_blank">GitHub</a> and <a
-          href="https://x.com" target="_blank">Twitter</a>.</p>
+      <p>Find me on <a href="https://github.com/Saumya-sarkhel" target="_blank">GitHub</a> and <a href="https://x.com"
+          target="_blank">Twitter</a>.</p>
     </section>
 
     <h3 class="contact">
@@ -92,7 +97,7 @@
       </div>
     </h3>
   </div>
-  </button>
+  <!-- Removed the extra, unmatched </button> tag here -->
   <script src="script.js"></script>
 </body>
 
